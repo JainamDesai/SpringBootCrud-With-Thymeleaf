@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html  lang="en" xmlns:th="https://thymeleaf.org">
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1 align="center">SHOW ALL PRODUCT RECORD</h1>
+ <br>
+ <label>Product Id:</label><h4 th:text = '${obj.id}'></h4><br>
+  <label>Product Name:</label><h4 th:text='${obj.name}'></h4><br>
+   <label>Product Description:</label><h4 th:text ='${obj.description}'></h4><br>
+   <a href="home">GO TO HOME</a>
+</body>
+</html>
